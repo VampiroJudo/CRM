@@ -1,6 +1,7 @@
 class FinderController < ApplicationController
 
 	def index
+		@page.total = 'All Customers'
 		@customers = Customer.all
 	end
 
