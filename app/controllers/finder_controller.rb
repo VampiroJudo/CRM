@@ -7,9 +7,11 @@ class FinderController < ApplicationController
 
 	def alphabetized
 		@customers = Customer.order(:full_name, :last_name)
+		render: index
 	end
 	
 	def missing_email
 		@customers = Customer.where(email_address: '')
+		render: index
 	end
 end
