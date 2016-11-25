@@ -3,4 +3,18 @@
 		<%= customer.last_name%></h2>
 	<p><strong>Phone Number:</strong> <%=customer.phone_number %></p>
 	<p><strong>Email:</strong> <%= customer.email_address %></p>
+	<p><strong>Province:</strong>
+	<% if customer.province.present? %>
+		<%= @customer.province.name %>
+	<% else %>
+		None
+	<% end %>
+	</p>
+
+	<% if customer.state.present? %>
+		<%= @customer.state.name %>
+	<% else %>
+		None
+	<% end %>
+	</p>
 </div>
