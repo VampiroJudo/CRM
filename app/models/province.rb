@@ -3,6 +3,5 @@ class Province < ApplicationRecord
 
 
 	
-	validates :full_name, presense: true
-	validates :last_name, presense: true
+	
 end
